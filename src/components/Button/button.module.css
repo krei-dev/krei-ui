@@ -1,0 +1,51 @@
+/*
+* MAIN STYLES
+*/
+.button {
+  color: rgba(0, 0, 0, 1);
+  padding: 8px 32px;
+  margin: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid black;
+  text-align: center;
+  font-family: sans-serif;
+  transition: color 100ms;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+.button:hover {
+  transition: all 200ms;
+  transform: scale(0.98);
+}
+.button:active {
+  transform: scale(0.94);
+}
+
+/*
+* SHADOWED BUTTON
+*/
+
+.shadowed {
+  box-shadow: 3px 3px 10px -4px;
+}
+.shadowed:hover {
+  box-shadow: 3px 3px 7px -3px;
+}
+.shadowed:active {
+  box-shadow: 2px 2px 3px -2px;
+}
+
+/*
+* DISABLED
+*/
+
+.button.disabled {
+  background-color: grey;
+  transform: none;
+}
+.button.shadowed.disabled {
+  box-shadow: 3px 3px 15px -7px;
+}
