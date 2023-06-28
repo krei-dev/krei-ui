@@ -1,6 +1,6 @@
 {
   "name": "krei",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha",
   "description": "React component library created to build apps fast, with optimised components and the consistent UI.",
   "type": "module",
   "files": [
