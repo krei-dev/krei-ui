@@ -2,8 +2,20 @@
   "name": "krei",
   "version": "0.0.0",
   "description": "React component library created to build apps fast, with optimised components and the consistent UI.",
-  "main": "index.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/krei.umd.cjs",
+  "module": "./dist/krei.js",
   "author": "krei",
+  "exports": {
+    ".": {
+      "import": "./dist/krei.js",
+      "require": "./dist/krei.umd.cjs"
+    }
+  },
+  "types": "./dist/krei.d.ts",
   "license": "MIT",
   "scripts": {
     "test": "vitest --coverage",
@@ -11,9 +23,7 @@
     "build-storybook": "storybook build",
     "format": "ts-standard --fix",
     "tsc": "tsc",
-    "build": "rm -rf dist/ && ts-standard --fix && npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+    "build": "rm -rf dist/ && ts-standard --fix && vite build"
   },
   "keywords": [
     "krei",
@@ -45,6 +55,8 @@
     "storybook": "^7.0.23",
     "ts-standard": "^12.0.2",
     "typescript": "^5.1.3",
+    "vite-plugin-dts": "^3.0.0-beta.3",
+    "vite-plugin-libcss": "^1.1.0",
     "vitest": "^0.32.2"
   },
   "peerDependencies": {

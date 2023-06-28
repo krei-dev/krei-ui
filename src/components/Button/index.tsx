@@ -20,4 +20,4 @@ const Button = (props: IButtonProps): JSX.Element => {
   )
 }
 
-export default Button
+export { Button }
