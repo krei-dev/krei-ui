@@ -1,8 +1,10 @@
 {
-  "name": "krei-ui",
+  "name": "krei",
   "version": "0.0.0",
-  "description": "React component library created to build apps fast, with optimised components and the UI staying consistent.",
+  "description": "React component library created to build apps fast, with optimised components and the consistent UI.",
   "main": "index.ts",
+  "author": "krei",
+  "license": "MIT",
   "scripts": {
     "test": "vitest --coverage",
     "storybook": "storybook dev -p 6006",
@@ -17,10 +19,14 @@
     "krei",
     "ui",
     "kreiUI",
-    "react"
+    "react",
+    "components"
   ],
-  "author": "krei",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krei-dev/krei-ui"
+  },
+  "homepage": "https://github.com/krei-dev",
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.23",
     "@storybook/addon-interactions": "^7.0.23",
